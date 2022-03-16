@@ -54,7 +54,7 @@ routes.post('/cart-items', (req, res) => {
     newItem.id = idCounter += 1;
     items.push(newItem);
     res.json(newItem);
-    res.status(200);
+    res.status(201);
 });
 
 routes.put('/cart-items/:id', (req, res) => {
